@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Montserrat;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: url('../image/bck2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    background-color: #5F3C26;
+    align-items: center;
+    padding: 0 15px;
+    position: fixed;
+    top: 0;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    padding: 13px;
+}
+
+.pilih-menu {
+  display: none;
+}
+
+.pesan {
+  background-color: #9A7558;
+  border-radius: 15px;
+}
+
+.logo {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-family: "Montserrat";
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.name{
+  color: #FEDDBA;
+}
+
+.cofee {
+  color: #DBA67C;
+}
+
+.pilih, li a {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+
+  .con_member{
+    background-color: #FEDDBA;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 10rem;
+    width: 70%;
+    align-items: center;
+    height: 25rem;
+    gap: 2rem;
+    border-radius: 2rem;
+    
+  }
+
+  .kanan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #9A7558;
+    height: 100%;
+    width: 60%;
+    border-radius: 5rem 0 0 5rem;
+    padding: 2rem;
+  }
+
+.con_kiri{
+  width: 50%;
+}
+
+  .kiri{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  
+  .isi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+  }
+  
+  .input_isi{
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background-color: #DBA67C;
+    border-radius: 0.7rem;
+  }
+  
+  .selesai{
+    width: 20%;
+    margin: auto;
+    padding: 0.2rem;
+    border-radius: 1rem;
+    border: 0.5px solid #5F3C26;
+    background-color: #9A7558;
+  }
+
+
+  @media (max-width: 768px) {
+body{
+  background: url('../image/bck.jpeg');
+}
+
+    .con_member{
+      margin-top: 50%;
+      flex-direction: column-reverse;
+    }
+
+    .kanan{
+      border-radius: 5rem;
+      width: 100%;
+      font-weight: 3rem;
+    }
+
+    .isi{
+      width: 100%;
+    }
+
+    .navbar ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      width: 70%;
+      height: 100vh;
+      background-color: #9A7558;
+      z-index: 1000;
+    }
+  
+    .navbar ul.show {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+
+    .selesai{
+      width: 50%;
+      margin-bottom: 2rem;
+    }
+
+
+
+    .navbar ul li a:hover{
+      background-color: #FEDDBA;
+      color: #000000;
+    }
+
+    li{
+      list-style: none;
+    }
+  }

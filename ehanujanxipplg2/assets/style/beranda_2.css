@@ -1,0 +1,491 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Montserrat;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url('../image/bck2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  background-color: #5F3C26;
+  align-items: center;
+  padding: 0 15px;
+  position: fixed;
+  top: 0;
+}
+
+.navbar ul li a {
+  color: white;
+  padding: 13px;
+}
+
+.pilih-menu {
+  display: none;
+}
+
+.pesan {
+  background-color: #9A7558;
+  border-radius: 15px;
+}
+
+.logo {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-family: "Montserrat";
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.name{
+  color: #FEDDBA;
+}
+
+.cofee {
+  color: #DBA67C;
+}
+
+.pilih, li a {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.slogan {
+  display: flex;
+  flex-direction: column;
+  gap: 50%;
+  font-size: 2rem;
+  color: white;
+  width: 20%;
+  margin-top: 4rem;
+}
+
+.order {
+  padding: 15px 25px;
+  background-color: #9A7558;
+  text-align: center;
+  color: white;
+  border-radius: 25px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.order:hover {
+  background-color: #DBA67C;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #FEDDBA;
+    color: #333;
+    scroll-margin-top: 80px;
+}
+
+.about h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+#galeri {
+  padding: 50px;
+  background-color: #DBA67C;
+  text-align: center;
+  scroll-margin-top: 80px;
+}
+
+#galeri h2{
+  font-size: 36px;
+}
+
+.ket-g{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 1rem 0 2rem 0;
+}
+
+#galeri p{
+  width: 40%;
+}
+
+.container-g{
+  display: flex;
+  margin: auto;
+  width: 90%;
+  height: 450px;
+  gap: 10px;
+  justify-content: center;
+  
+}
+
+.container-g .poto{
+  width: 15%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #b0b0b0;
+  transition: all ease-out 0.5s;
+}
+
+.container-g .poto:hover{
+  width: 40%;
+}
+
+
+#menu {
+  background-color: #FEDDBA;
+  padding: 50px 20px;
+  text-align: center;
+  scroll-margin-top: 80px;
+}
+
+#menu h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #5F3C26;
+}
+
+.menu-kat {
+  margin-bottom: 50px;
+}
+
+.menu-kat h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #9A7558;
+}
+
+.menu-jenis {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.menu-jenis img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.deskripsi-menu {
+  text-align: left;
+}
+
+.deskripsi-menu h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.deskripsi-menu p {
+  font-size: 16px;
+  color: #666;
+}
+
+.harga {
+  font-size: 18px;
+  font-weight: bold;
+  color: #5F3C26;
+}
+
+#pesanSekarang{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: #DBA67d;
+  align-items: center;
+  gap: 2rem;
+  margin: auto;
+  scroll-margin-top: 80px;
+  padding-top: 7rem;
+  
+}
+
+.burger{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  background-color: #FEDDBA;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.burgerGambar{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 10px;
+}
+
+.ketPesan{
+  display: flex;
+  flex-direction: column;
+}
+
+.status{
+  display: flex;
+  gap: 1rem;
+}
+
+.jumlah_pesanan{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+button{
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover{
+  background-color: #DBA67C;
+}
+
+#join-member{
+  background-color: #FEDDBA;
+  height: 70vh;
+  display: flex;
+  scroll-margin-top: 80px;
+}
+
+.formkiri{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 2rem;
+  justify-content: center;
+}
+
+
+.isi{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.input_isi{
+  width: 50%;
+  padding: 1rem;
+  border: none;
+  background-color: #DBA67C;
+  border-radius: 0.7rem;
+}
+
+.selesai{
+  width: 20%;
+  margin: auto;
+  padding: 0.2rem;
+  border-radius: 1rem;
+  border: 0.5px solid #5F3C26;
+  background-color: #9A7558;
+}
+
+.formkanan{
+  background-color: #9A7558;
+  width: 60%;
+  border-radius: 5rem 0 0 5rem;
+  padding: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #5F3C26;
+    color: white;
+    font-size: 14px;
+    position: relative;
+}
+
+
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu-toggle .bar {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+
+
+@media (max-width: 768px) {
+  *{
+    list-style: none;
+  }
+  
+  body{
+    background: url('../image/bck.jpeg') no-repeat center center fixed;
+    background-size: cover;
+  margin: 0;
+  padding: 0;
+  }
+  
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+    background-color: #9A7558;
+    z-index: 1000;
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+  
+  
+  .slogan {
+    font-size: 1.7rem;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .order{
+    width: 45%;
+    
+  }
+  
+  .navbar ul {
+    display: none;
+  }
+  
+  .navbar ul li a{
+    transition: background-color 0.5s ease;
+  }
+  
+  .navbar ul li a:hover{
+    background-color: #FEDDBA;
+    color: #000000;
+  }
+  
+  .pesan{
+    border-radius: 0;
+  }
+
+  
+  
+  #galeri{
+    height: 170vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    flex-direction: column;
+    scroll-margin-top: 80px;
+  }
+  
+  #galeri h2{
+    margin-top: 2rem;
+  }
+  
+  #galeri p{
+    width: 100%;
+  }
+  
+  .container-g{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 50%;
+  gap: 10px;
+  justify-content: center;
+}
+
+.container-g .poto{
+  width: 100%;
+  height: 20%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #b0b0b0;
+  transition: all ease-out 0.5s;
+}
+
+.container-g .poto:hover{
+  height: 40%;
+  width: 100%;
+}
+}
