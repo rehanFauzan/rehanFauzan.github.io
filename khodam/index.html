@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,710;1,710&display=swap" rel="stylesheet">
+
+
+        <title>cek khodam</title>
+    </head>
+
+
+
+    <body>
+        <div class="container">
+        <h1>Cek Khodam <3 </h1>
+        <form id="khodamForm">
+            <label for="name">Nama Anda:</label>
+            <input type="text" id="name" name="name" placeholder="nama" required>
+            
+            <label for="birthdate">Tanggal Lahir:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+            
+            <button type="submit">Cek Khodam</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+
+
+<style type="text/css" media="all">
+    body {
+    font-family: Montserrat, Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: pink;
+}
+
+input::placeholder{
+  color: pink;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+</style>
+
+
+
+    <script>
+        document.getElementById('khodamForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const birthdate = document.getElementById('birthdate').value;
+    const resultDiv = document.getElementById('result');
+
+
+    const khodams = [
+        "kurupuk atah",
+        "betmen cangcut berem",
+        "mejikom",
+        "rengginang",
+        "helm full face",
+        "galon akua",
+        "tai cakcak",
+        "kaleng kongguan"
+    ];
+
+    const randomIndex = Math.floor(Math.random() * khodams.length);
+    const khodam = khodams[randomIndex];
+
+    resultDiv.innerHTML = `<p>Nama: ${name}</p><p>Khodam Anda: ${khodam}</p>`;
+});
+    </script>
+
+
+
+    </body>
+  </html>
