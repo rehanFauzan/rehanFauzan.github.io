@@ -1,0 +1,275 @@
+body{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  height: 100vh;
+  font-family: Kanit;
+  background-color: #202125 ;
+}
+
+.nav_bar{
+  background-color: #202125;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  justify-content: space-around;
+  gap: 330px;
+}
+
+.nav-between2{
+  width: 40px;
+  display: flex;
+  align-items: center;
+  margin: -10px;
+  justify-content: center;
+}
+
+.nav_bar a{
+  text-decoration: none;
+  color: #9D9D9D;
+  margin-right: 20px;
+}
+
+.nav_bar a:hover{
+  border-bottom: 2px solid #A8C8FB;
+  color: #A8C8FB;
+}
+
+.search-inp{
+  padding: 10px 15px 10px 40px;
+}
+
+
+
+.inp-search{
+  width: 480px;
+  display: flex;
+  background-color: #1F1F1F;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  padding: 3px 10px;
+  gap: 3px;
+  border: 1px solid #9D9D9D;
+  color: #9D9D9D;
+}
+
+#inp{
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 30px;
+  padding-left: 20px;
+  font-size: 15px;
+  background-color: #1F1F1F;
+  color: #9D9D9D;
+  outline: none;
+  
+}
+
+.container1{
+  height: 86.8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.gg{
+  width: 200px;
+  margin-top: 80px;
+}
+
+.bottom{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #9D9D9D;
+  margin-top: -20px;
+}
+
+.bahasa{
+  color: #A8C8FB;
+  gap: 10px;
+}
+
+.eng{
+  color: #A8C8FB;
+}
+
+.atas{
+  height: 38px;
+  display: flex;
+  font-size: 20px;
+  color: #9D9D9D;
+  padding-left: 15px;
+  border-bottom: 1px solid #3c3c3c;
+  background-color: #171717;
+  align-items: center;
+}
+
+.bawah{
+  display: flex;
+  color: #9D9D9D;
+  background-color: #171717;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.cari{
+  width: 70px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 7px;
+  color: #9D9D9D;
+  background-color: #171717;
+  border: 1px solid #9D9D9D;
+}
+
+.cari:active{
+  background-color: #9D9D9D;
+  color: #171717;
+  border: 1px solid #9D9D9d;
+}
+
+.popupMenu{
+  width: 70%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #292A2C;
+  color: #9D9D9D;
+box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.53);
+display: none;
+position: fixed;
+height: fit-content;
+}
+
+.sapa{
+  margin-top: -7px;
+}
+
+.kelola{
+  padding: 10px 20px;
+  border-radius: 55px;
+  margin-top: -18px;
+  border: 1px solid #9D9D9D;
+  color: #A8C8FB;
+}
+
+.more{
+  display: flex;
+  align-items: center;
+  background-color: #1B1B1B;
+  gap: 60px;
+  padding: 0px 20px;
+  border-radius: 60px;
+  margin-top: -4px;
+}
+
+.kanan{
+  margin-top: 5px;
+}
+
+.lainnya{
+  width: 100%;
+  padding-left: 60px;
+}
+
+.history{
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #1B1B1B;
+  border-radius: 30px 30px 5px 5px;
+  padding: 0px 20px;
+}
+
+.hapus{
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #1B1B1B;
+  border-radius: 5px 5px 30px 30px;
+  padding: 0px 20px;
+  margin-top: 3px;
+}
+
+.minat{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  background-color: #1B1B1B;
+  padding: 0px 20px;
+  border-radius: 60px;
+  margin-top: 12px;
+}
+
+.lebarPopup{
+  width: 100%;
+  position: fixed;
+  display: flex;
+  padding-right: 30px;
+  justify-content: flex-end;
+  background-color: blue;
+}
+
+.save{
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #1B1B1B;
+  border-radius: 30px 30px 5px 5px;
+  padding: 0px 20px;
+  margin-top: 12px;
+}
+
+.bahasaA{
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #1B1B1B;
+  border-radius: 5px;
+  padding: 0px 20px;
+  margin-top: 3px;
+  height: 50px;
+  align-items: center;
+}
+
+.duaPart{
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  gap: 3px;
+  margin-top: 3px;
+}
+
+.part1{
+  background-color: #1B1B1B;
+  width: 50%;
+  padding: 0 10px;
+  border-radius: 5px 5px 5px 30px;
+}
+
+.part2{
+  background-color: #1B1B1B;
+  width: 50%;
+padding: 0 10px;
+border-radius: 5px 5px 30px 5px;
+}
+
+.kebijakan{
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  padding-left: 18px;
+  margin-top: 10px;
+  font-size: 12px;
+}
