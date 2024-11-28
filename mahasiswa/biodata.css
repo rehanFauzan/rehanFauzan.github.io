@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Jost;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffccbb;
+}
+
+header {
+  width: 100vh;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #006c84;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.navBar {
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+
+ul,
+li {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0 10px 0 10px;
+}
+
+ul {
+  margin-right: 15px;
+}
+
+li:hover {
+  background-color: #e2e8e4;
+  border-radius: 5px;
+  transition: background-color 0.4s ease-in-out;
+}
+
+li:active {
+  background-color: #e2e8e4;
+}
+
+.namaHead {
+  display: flex;
+  width: 30%;
+  background-color: #e2e8e4;
+  justify-content: center;
+  margin-top: 20px;
+  border-radius: 8px 8px 0 0;
+  border-top: 1.5px solid #006c84;
+  border-right: 1.5px solid #006c84;
+  border-left: 1.5px solid #006c84;
+}
+
+img {
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+form {
+  width: 50%;
+  height: fit-content;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: #6eb5c0;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.66);
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.66);
+}
+
+.judul {
+  display: flex;
+  justify-content: center;
+  margin-top: -40px;
+  border-bottom: 2px solid black;
+}
+
+.alamat {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  width: 100px;
+}
+
+.nama,
+.alamat,
+.kelas,
+.jurusan,
+.hobi,
+.username,
+.pass,
+.tingkatan {
+  display: flex;
+  align-items: center;
+}
+
+.inp {
+  padding-left: 10px;
+  flex: 1;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid rgb(183, 183, 183);
+  outline: none;
+  transition: border-color 0.5s ease-in-out;
+  background-color: #e2e8e4;
+}
+
+.inp-almt {
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid rgb(183, 183, 183);
+  padding-left: 10px;
+  transition: border-color 0.5s ease-in-out;
+  background-color: #e2e8e4;
+}
+
+.inp-almt:focus {
+  border-width: 1.5px;
+  border-color: rgb(59, 59, 60);
+}
+
+.inp:focus {
+  border-width: 1.5px;
+  border-color: rgb(59, 59, 60);
+}
+
+.simpan {
+  width: 30%;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  background-color: #e2e8e4;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+
+.simpan:hover {
+  background-color: #006c84;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.simpan_con {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.kirimprof {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #006c84;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
